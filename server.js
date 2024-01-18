@@ -1,3 +1,18 @@
+/********************************************************************************
+*  WEB422 – Assignment 1
+* 
+*  I declare that this assignment is my own work in accordance with Seneca's
+*  Academic Integrity Policy:
+* 
+*  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
+* 
+*  Name: __LOMIA WU___ Student ID: ___116492182___ Date: ____2024-01-17__________
+*
+*  Published URL:   https://dull-jade-rhinoceros-slip.cyclic.app/
+*
+********************************************************************************/
+
+
 const express = require("express");
 const app = express();
 const HTTP_PORT = process.env.PORT || 8080;
