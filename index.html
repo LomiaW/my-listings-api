@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- Bootstrap 5.1 CSS-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+
+	<!-- Bootstrap 5.1 JS Bundle -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+		crossorigin="anonymous"></script>
+
+	<!-- Custom Stylesheet -->
+	<link rel="stylesheet" href="/css/main.css" />
+
+	<!-- JavaScript -->
+	<script src="/js/main.js"></script>
+
+	<title>Airbnb Listings App</title>
+</head>
+
+<body>
+	<!-- Navbar -->
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="#">Lomia Wu - Airbnb Listings</a>
+			<div class="justify-content-end" id="navbarSupportedContent">
+				<form class="d-flex" id="searchForm">
+					<input class="form-control me-2" type="search" placeholder="Listing Name" id="name" aria-label="Search">
+					<div class="d-grid gap-2 d-md-flex justify-content-md-end">
+						<button class="btn btn-outline-success" id="searchForm" type="submit">Search</button>
+						<button class="btn btn-outline-danger" id="clearForm" type="reset">Clear</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</nav>
+
+	<!-- Main Content Skeleton-->
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<!-- Listings Table -->
+				<table class="table table-striped" id="listingsTable">
+					<thead>
+						<tr>
+							<th scope="col">Name</th>
+							<th scope="col">Type</th>
+							<th scope="col">Location</th>
+							<th scope="col">Summary</th>
+						</tr>
+					</thead>
+					<tbody><!-- Table body is populated by JS --></tbody>
+				</table>
+				<!-- Pagination Buttons -->
+				<nav aria-label="Page navigation example">
+					<ul class="pagination">
+						<li class="page-item">
+							<a class="page-link" href="#" id="previous-page" aria-label="Previous">
+								<span aria-hidden="true">&laquo;</span>
+							</a>
+						</li>
+						<li class="page-item"><a class="page-link" href="#" id="current-page"></a></li>
+						<li class="page-item">
+							<a class="page-link" href="#" id="next-page" aria-label="Next">
+								<span aria-hidden="true">&raquo;</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<!-- Listing Details Modal -->
+	<div class="modal fade" tabindex="-1" id="detailsModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title"><!-- Modal title is pupulated by JS --></h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body"><!-- Modal body is populated by JS --></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
