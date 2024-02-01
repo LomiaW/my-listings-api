@@ -31,3 +31,8 @@ This is a simgple Web App to manage a list of listings. It is built using Node.j
 ## Deployment URL
 
 https://dull-jade-rhinoceros-slip.cyclic.app/
+
+## Demo
+
+https://github.com/LomiaW/web422-assignments/assets/97309404/cf0a9de1-6f15-4e5c-aa60-884ac72337e3
+
