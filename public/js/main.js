@@ -1,15 +1,3 @@
-/********************************************************************************
-*  WEB422 – Assignment 2
-* 
-*  I declare that this assignment is my own work in accordance with Seneca's
-*  Academic Integrity Policy:
-* 
-*  https://www.senecapolytechnic.ca/about/policies/academic-integrity-policy.html
-* 
-*  Name: _____LOMIA WU_______ Student ID: ___116492182___ Date: ___2024-02-01____
-*
-********************************************************************************/
-
 
 /* Global Variables */
 var page = 1;
