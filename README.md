@@ -1,15 +1,39 @@
-# WEB422 Assignment Project - Listings App
+# Listings App
 
 ## Description
 
-This is a simple API server to manage a list of listings. It is built using Node.js, Express, and MongoDB.
+This is a simple web API server to work with the data of Airbnb listings.
 
 
-## Features
+## Endpoints
 
-- View all listings
-- Search a single listing
+-	POST /api/listings
+  
+    This will request to add a new listing to MongoDB.
 
+-	GET /api/listings
+
+    This will accept 2 query parameters "page" and "perPage" as well as (optional) a string "name",
+
+ 	  ie: /api/listings?page=1&perPage=5&name=Volcanoes National Park.
+
+ 	  It will use these values to return all "Listings" objects for a specific "page" to the client as well as optionally filtering by "name", if provided.
+
+-	GET /api/listings/[:_id]
+
+    This will accept a route parameter that represents the _id of the desired listing object and return the specified listing.
+
+-	PUT /api/listings/[:_id]
+
+    This route must accept a route parameter that represents the _id of the desired listing object, ie: /api/listings/9696653, as well as read the contents of the request body.
+
+ 	  It will use these values to update a specific "Listing" document in the collection and return a success / fail message to the client.
+
+-	DELETE /api/listings/[:_id]
+
+    This route must accept a route parameter that represents the _id of the desired listing object, ie: /api/listings/9696653.
+
+ 	  It will use this value to delete a specific "Listing" document from the collection and return a success / fail message to the client.
 
 ## Technologies
 
