@@ -2,7 +2,7 @@
 
 ## Description
 
-This is a simple Web App to manage a list of listings. It is built using Node.js, Express, and MongoDB.
+This is a simple API server to manage a list of listings. It is built using Node.js, Express, and MongoDB.
 
 
 ## Features
