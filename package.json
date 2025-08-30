@@ -1,7 +1,7 @@
 {
-  "name": "listingsapi",
+  "name": "my-listings-api",
   "version": "1.0.0",
-  "description": "WEB 422 A1",
+  "description": "Web API for managing listings",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
