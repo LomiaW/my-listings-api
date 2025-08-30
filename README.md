@@ -51,14 +51,3 @@ This is a simple web API server to work with the data of Airbnb listings.
 2. Run `npm install` to install dependencies
 3. Run `npm start` to start the server
 
-
-## Deployment URL
-
-https://dull-jade-rhinoceros-slip.cyclic.app/
-
-
-## Demo
-
-
-https://github.com/LomiaW/web422-assignments/assets/97309404/70c9dc55-2c0b-415d-9ef4-5dd626b80f39
-
