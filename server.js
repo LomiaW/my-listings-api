@@ -43,9 +43,11 @@ app.get("/api/listings", (req, res) => {
 	db.getAllListings(req.query.page, req.query.perPage, req.query.name)
 		.then((listings) => {
 			res.status(200).json(listings);
+			console.log(`POST /api/listings with response status 200`)
 		})
 		.catch((err) => {
 			res.status(400).json({ message: err.message });
+			console.log(`POST /api/listings with response status 400 and ${err}`)
 		});
 });
 
